@@ -53,7 +53,7 @@ public class JDBCTest {
 		}
 			
 		// 4-2) insert, update, delete, DDL 쿼리인 경우 (결과 반환이 있는 경우)
-		String insertQuery = " insert into Region values(101, 'hello') ";
+		String insertQuery = " insert into Region values(100, 'hello') ";
 		// insert, update, delete, DDL의 영향을 받은 행의 수를 리턴
 		int updateResult = statement.executeUpdate(insertQuery);
 		System.out.println("업데이트결과: " + updateResult);
